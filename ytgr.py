@@ -15,8 +15,9 @@ def handle(msg):
         chat_id = msg['chat']['id']
         command = msg['text']
 
+        print "Command from client : %s " %command
+
     #youtube search
-    
         if command.startswith('yt'):
             param = command[3:]
             response = urlopen("https://www.youtube.com/results?search_query="+param)
