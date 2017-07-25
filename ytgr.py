@@ -51,6 +51,7 @@ def handle(msg):
                 ydl.download([link])
                 bot.sendAudio(chat_id,audio=open(filename,'rb'))
                 print "Sent!"
+            os.remove(filename)
     #end youtube search
 
 
