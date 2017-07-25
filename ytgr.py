@@ -40,10 +40,11 @@ def handle(msg):
                     'preferredquality': '320'
                 }]
             }
-
+            filename = title+"-"+watchid+".mp3"
+            filename = filename.replace(" ","_")
             with youtube_dl.YoutubeDL(options) as ydl:
                 ydl.download([link])
-                bot.sendAudio(chat_id,audio=open(title+"-"+watchid+".mp3",'rb'))
+                bot.sendAudio(chat_id,audio=open(filename,'rb'))
                 print "Sent!"
     #end youtube search
 
