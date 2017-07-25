@@ -44,6 +44,7 @@ def handle(msg):
             filename = title+"-"+watchid+".mp3"
             filename = filename.replace(" ","_")
             filename = filename.replace("'","")
+            filename = filename.replace("&","")
             with youtube_dl.YoutubeDL(options) as ydl:
                 ydl.download([link])
                 bot.sendAudio(chat_id,audio=open(filename,'rb'))
