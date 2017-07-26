@@ -1,7 +1,7 @@
 # teletubemp3 - A Telegram Bot
 
 teletubemp3 is a Telegram Bot which converts YouTube video(s) to mp3 and send directly to your Telegram.
-
+![yt despacito](https://raw.githubusercontent.com/thezawad/teletubemp3/master/screenshot.png)
 ### How does it work?
 
 * It takes your command ( `yt videoname` )
@@ -42,8 +42,3 @@ In your Telegram message box. Text
 `yt videoname`
 
 The Bot will find out the video from YouTube, converts it and send it to your Telegram.
-
-### Screenshot
-![yt despacito](https://raw.githubusercontent.com/thezawad/teletubemp3/master/screenshot.png)
-
-
